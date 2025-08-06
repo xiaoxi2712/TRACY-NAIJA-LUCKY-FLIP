@@ -1,0 +1,88 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #a9c96ed0;
+  margin: 0;
+  padding: 20px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card img {
+  width: 190px;
+  height: 190px;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+/* Popup style */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background: rgb(230, 206, 206);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.popup-content button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.replay-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.replay-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.replay-btn:hover {
+  background-color: #45a049;
+}
+#fireworks-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Đặt sau các phần khác */
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Không ảnh hưởng thao tác người dùng */
+}
