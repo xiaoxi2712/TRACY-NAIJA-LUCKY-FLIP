@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Naija Gift Card - Lucky Flip</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<body>
+  <canvas id="fireworks-canvas"></canvas>
+<h1>NAIJA GIFT CARD - LUCKY FliP</h1>
+  <p>Runs from Sept 1 to Oct 15, 2025. Valid for transactions from 3PM to 3AM Nigeria time.</p>
+
+  <div class="card-container">
+    <!-- 6 thẻ -->
+    <div class="card" data-id="1"><img src="images/20.png" alt="Card 1"></div>
+    <div class="card" data-id="2"><img src="images/21.png" alt="Card 2"></div>
+    <div class="card" data-id="3"><img src="images/22.png" alt="Card 3"></div>
+    <div class="card" data-id="4"><img src="images/23.png" alt="Card 4"></div>
+    <div class="card" data-id="5"><img src="images/24.png" alt="Card 5"></div>
+    <div class="card" data-id="6"><img src="images/25.png" alt="Card 6"></div>
+  </div>
+
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <p id="popup-message">🎉 Congratulations!</p>
+      <button onclick="replay()">Replay</button>
+    </div>
+  </div>
+<!-- Popup -->
+<div id="popup" class="popup">
+  <div id="popup-message" class="popup-message"></div>
+</div>
+
+<!-- Nút Replay -->
+<div class="replay-container">
+  <button onclick="replay()" class="replay-btn">🔁 Replay</button>
+</div>
+
+  <audio id="flipSound" src="open.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
